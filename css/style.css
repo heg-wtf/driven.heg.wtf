@@ -57,11 +57,14 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    font-style: italic;
-    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 24px;
 }
 
 .nav-links {
@@ -395,10 +398,14 @@ body {
 }
 
 .footer-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-style: italic;
-    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 24px;
 }
 
 .footer-links {
