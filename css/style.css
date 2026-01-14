@@ -114,6 +114,17 @@ body {
     color: white;
 }
 
+.btn-coming-soon {
+    background: #e0e0e0;
+    color: #999999;
+    border-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.btn-coming-soon:hover {
+    background: #d0d0d0;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -234,18 +245,38 @@ body {
 
 .screenshots-gallery {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.screenshots-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.screenshots-gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.screenshots-gallery::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.screenshots-gallery::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .screenshot-item {
+    flex-shrink: 0;
     text-align: center;
 }
 
 .screenshot-item img {
-    max-width: 280px;
-    width: 100%;
+    width: 280px;
     height: auto;
     border-radius: 25px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
@@ -254,13 +285,6 @@ body {
 
 .screenshot-item img:hover {
     transform: scale(1.02);
-}
-
-.screenshot-caption {
-    margin-top: 20px;
-    font-size: 1rem;
-    color: var(--text-light);
-    font-weight: 500;
 }
 
 /* About Section */
@@ -475,11 +499,11 @@ body {
     }
 
     .screenshots-gallery {
-        gap: 30px;
+        gap: 20px;
     }
 
     .screenshot-item img {
-        max-width: 240px;
+        width: 220px;
     }
 
     .about {
