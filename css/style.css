@@ -117,17 +117,6 @@ body {
     color: white;
 }
 
-.btn-coming-soon {
-    background: #e0e0e0;
-    color: #999999;
-    border-color: #e0e0e0;
-    cursor: pointer;
-}
-
-.btn-coming-soon:hover {
-    background: #d0d0d0;
-}
-
 /* Hero Section */
 .hero {
     display: flex;
