@@ -27,7 +27,6 @@
 ## 🛠 기술 스택
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Backend**: Google Apps Script (뉴스레터 구독)
 - **Hosting**: GitHub Pages
 - **Domain**: driven.heg.wtf (CNAME)
 - **Fonts**: Noto Sans KR (Google Fonts)
@@ -39,8 +38,6 @@ driven.heg.wtf/
 ├── index.html              # 메인 랜딩 페이지
 ├── css/
 │   └── style.css          # 스타일시트
-├── js/
-│   └── newsletter.js      # 뉴스레터 구독 로직
 ├── assets/
 │   └── images/
 │       ├── icon.png                    # 로고
@@ -57,22 +54,6 @@ driven.heg.wtf/
 ├── CNAME                   # 커스텀 도메인 설정
 └── README.md              # 프로젝트 문서
 ```
-
-## 📧 뉴스레터 구독 기능
-
-Google Apps Script를 사용하여 구독자 이메일을 구글 시트에 자동 저장합니다.
-
-**기능:**
-- 실시간 이메일 수집 및 구글 시트 저장
-- 타임스탬프 자동 기록
-- 이메일 유효성 검사
-- 중복 구독 방지
-- 성공/오류 메시지 표시
-
-**설정 방법:**
-1. Google Sheets 생성
-2. Apps Script 코드 배포 (웹 앱)
-3. `js/newsletter.js`의 `APPS_SCRIPT_URL` 수정
 
 ## 🚀 로컬 개발
 
